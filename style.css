@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+
+/* COMMON GRADIENT STYLE  */
+
+.common-color{
+    color: #FFF;
+    border: none;
+    border-radius: 10000px;
+    background: linear-gradient(to right,rgb(196, 184, 55),rgb(64, 144, 188),rgb(114, 8, 190));
+}
+
+.text-color{
+    background: linear-gradient(to right,rgb(196, 184, 55),rgb(64, 144, 188),rgb(114, 8, 190));
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.background-color{
+    background: rgba(26, 11, 46, 1);
+}
