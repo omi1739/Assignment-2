@@ -20,3 +20,32 @@
 .background-color{
     background: rgba(26, 11, 46, 1);
 }
+
+.circle{
+    background: url('./assets/hero-circle.png');
+    width: 350px;
+    height: 350px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.mic{
+    background: url('./assets/microphone.png');
+    background-repeat: no-repeat;
+    max-width: 117px;
+    width: 100%;
+    height: 175px;
+}
+
+.background{
+    background: none;
+    color: rgb(25, 156, 64);
+    border: 1px solid  rgb(25, 156, 64);
+    border-radius: 100px;
+    padding: 10px 10px;
+    gap: 8px;
+}
