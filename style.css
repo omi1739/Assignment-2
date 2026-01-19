@@ -92,6 +92,10 @@
      padding: 50px 30px;
 }
 
+.grid-main{
+    background-color:  rgba(35, 14, 61, 1) ;
+}
+
 .grid-section{
     display: grid;
     gap: 25px;
@@ -100,4 +104,13 @@
       "audio      global-community  global-community"
       "exclusive  exclusive         rich"
     ;
+}
+
+.card{
+    background-color:  rgba(53, 17, 101, 0.4); 
+    border-radius: 20px;
+}
+
+.card iframe{
+    border-radius: 20px;
 }
