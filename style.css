@@ -14,11 +14,16 @@
     background: linear-gradient(to right,rgb(196, 184, 55),rgb(64, 144, 188),rgb(114, 8, 190));
 
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .background-color{
     background: rgba(26, 11, 46, 1);
+}
+
+.menu{
+    visibility: hidden;
 }
 
 .circle{
@@ -30,7 +35,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 
+}
+
+.circle .new{
+    border:0.5px solid green;
+    border-radius:40px;
+    padding:10px 15px;
+    box-shadow: 0px 0px 5px greenyellow;
+    position:absolute;
+    top:10px;
+    right:50px;
+    font-weight: 500;
+    text-align:center;
+    background-color: greenyellow;
 }
 
 .mic{
@@ -94,17 +113,20 @@
 
 .grid-main{
     background-color:  rgba(35, 14, 61, 1) ;
+    padding: 30px 15px;
 }
 
 .grid-section{
     display: grid;
     gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-areas: 
       "audio      mobile            mobile"
       "audio      global-community  global-community"
       "exclusive  exclusive         rich"
     ;
 }
+
 
 .card{
     background-color:  rgba(53, 17, 101, 0.4); 
@@ -113,4 +135,165 @@
 
 .card iframe{
     border-radius: 20px;
+}
+
+.host-part{
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 20px;
+}
+
+.icon{
+    border: 1px solid rgba(83, 60, 114, 1);
+    border-radius: 50%;
+}
+
+footer{
+    background: url('./assets/footer-bg.png');
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  
+}
+
+.fot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    min-height: 412px;
+}
+
+.footer-icon{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+
+/* Responsive Design for screens up to 576px  */
+
+@media (max-width: 576px) {
+
+    .nav-items{
+        display: none;
+    } 
+
+    
+    
+    .sub-button{
+        display: none;
+        
+    }
+
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        height: 25px;
+    }
+    .menu{
+        visibility: visible;
+        height: 25px;
+        margin-top: 20px;
+      
+    }
+
+    .nested-background-image{
+        margin-top: 50px;
+    }
+
+    .info{
+        grid-template-columns: repeat(2 ,1fr);
+    }
+
+
+    .grid-section {
+
+        grid-template-columns: 1fr;
+       
+        grid-template-areas:  
+          "audio"
+          "mobile"
+          "global-community"
+          "exclusive"
+          "rich"
+        ;
+    }
+
+    #audio {
+        padding: 30px 20px;
+    }
+
+    #mobile {
+        padding: 30px 20px;
+    }
+
+    #global-community {
+        padding: 30px 20px;
+    }
+
+    #exclusive {
+        padding: 30px 20px;
+    }
+
+    #rich {
+        padding: 30px 20px;
+    }
+
+    .grid-section > * {
+        padding: 20px 10px;
+    }
+
+    .grid-main {
+        padding: 20px 10px;
+    }
+
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .host-part{
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .host-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .host{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+    }
+
+    .social-icons{
+        justify-content: center;
+    }
+
+      .fot {
+        padding: 30px 15px;
+        min-height: auto;
+    }
+
+    .fot h1 {
+        font-size: 2.5rem;
+    }
+
+    .footer-icon-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        width: 100% !important;
+        max-width: 400px !important;
+    }
+
+    .footer-icon {
+        justify-content: center;
+    }
 }
